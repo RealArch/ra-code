@@ -49,37 +49,83 @@ body {
 body {
   margin: 0;
 }
+
 //Pharagraph
-p{
+p {
   font-size: 1.1em;
 }
+
 //typography
-.subtitle-1{
-  color: var(--ion-color-primary);
-  font-size: 1.1em;
-  font-weight: 600;
- }
-.subtitle-3{
- color: var(--ion-color-primary);
- font-size: 1.3em;
- font-weight: 600;
-}
-.title-1{
+.font-dark {
   color: var(--ion-color-dark);
-  font-size: 2.3em;
+}
+
+.font-primary {
+  color: var(--ion-color-primary);
+}
+
+.font-white {
+  color: white;
+}
+
+
+h1 {
+  font-size: 40px;
   font-weight: 600;
   line-height: 1.1;
 }
-.title-3{
-  color: var(--ion-color-dark);
+
+.title-1 {
+  font-size: 3em;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.title-2 {
+  font-size: 2.5em;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+h3 {
   font-size: 1.5em;
   font-weight: 600;
   line-height: 1.1;
 }
+
+.title-3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.title-4 {
+  font-size: 1.3em;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.subtitle-1 {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.subtitle-3 {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+
 //Components
-.card-box{
+.card-box {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  .card-content{
+
+  .card-content {
     margin: 20px;
   }
 }

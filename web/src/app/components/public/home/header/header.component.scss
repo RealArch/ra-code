@@ -18,12 +18,20 @@ strong{
     font-weight: 300;
     line-height: normal;
 }
-.img{
-    position: relative;
-    right: -100px;
+@media only screen and (min-width: 1200px) {
+    .img{
+      padding-left:100px;
+    }
 }
 /* Media query para pantallas más pequeñas */
+@media only screen and (min-width: 769px) {
+    .row{
+        width: 100%;
+    }
+}
 @media only screen and (max-width: 768px) {
+    .img{
+    }
     .title {
         font-size: 2em;
         /* Tamaño de fuente para pantallas más pequeñas */

@@ -2,11 +2,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    aspect-ratio: 4 / 2;
-    width: 200px;
-
+    
     mat-icon {
-        transform: scale(2);
+        // transform: scale(2);
+        font-size: 50px;
+        height: auto;
+        width: auto;
         color: var(--ion-color-primary);
     }
 }

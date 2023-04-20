@@ -1,0 +1,29 @@
+<div class="container">
+    <app-home-titles title="Características" description="Principales características que te harán elegirnos"
+        class="text-center"></app-home-titles>
+    <div class="row">
+        <div *ngFor="let feature of features" class="col-12 col-lg-6 mb-3">
+            <div class="card-box d-md-flex justify-content-center align-items-center p-4">
+                <div class="icon-box me-md-3 px-md-3">
+                    <mat-icon class="icon" aria-hidden="false" aria-label="Example home icon"
+                        [fontIcon]="feature.icon"></mat-icon>
+                </div>
+                <div class="card-content d-flex ms-0">
+                    <div>
+                        <div class="title-3 pb-2 font-dark">
+                            {{feature.title}}
+                        </div>
+                        <div>
+                            <p>
+                                {{feature.description}}
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
