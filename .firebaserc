@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ra-code": {
+      "hosting": {
+        "web": [
+          "ra-code"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ra-code"
+  }
+}

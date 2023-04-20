@@ -1,1 +1,85 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+
+
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+@import "/src/theme/theme.scss";
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$web-primary: mat.define-palette($primary-palette, 500);
+$web-accent: mat.define-palette($secondary-palette, 500);
+$web-warn: mat.define-palette(mat.$red-palette);
+$web-test: mat.define-palette(mat.$red-palette);
+
+
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$my-typography: mat.define-typography-config($font-family: 'Poppins',
+  );
+$web-theme: mat.define-light-theme((color: (primary: $web-primary,
+        accent: $web-accent,
+        warn: $web-warn ),
+    ));
+
+
+// Now we have sweet buttons with Comic Sans.
+
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($web-theme);
+@include mat.typography-hierarchy($my-typography);
+
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+//Pharagraph
+p{
+  font-size: 1.1em;
+}
+//typography
+.subtitle-1{
+  color: var(--ion-color-primary);
+  font-size: 1.1em;
+  font-weight: 600;
+ }
+.subtitle-3{
+ color: var(--ion-color-primary);
+ font-size: 1.3em;
+ font-weight: 600;
+}
+.title-1{
+  color: var(--ion-color-dark);
+  font-size: 2.3em;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.title-3{
+  color: var(--ion-color-dark);
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1.1;
+}
+//Components
+.card-box{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  .card-content{
+    margin: 20px;
+  }
+}

@@ -1,0 +1,12 @@
+.icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 4 / 2;
+    width: 200px;
+
+    mat-icon {
+        transform: scale(2);
+        color: var(--ion-color-primary);
+    }
+}

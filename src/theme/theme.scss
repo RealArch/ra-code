@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+:root {
+	--ion-color-primary: #292DC2;
+	--ion-color-primary-rgb: 41, 45, 194;
+	--ion-color-primary-contrast: #ffffff;
+	--ion-color-primary-contrast-rgb: 255, 255, 255;
+	--ion-color-primary-shade: #2428ab;
+	--ion-color-primary-tint: #3e42c8;
+
+	--ion-color-secondary: #44BEA4;
+	--ion-color-secondary-rgb: 68, 190, 164;
+	--ion-color-secondary-contrast: #000000;
+	--ion-color-secondary-contrast-rgb: 0, 0, 0;
+	--ion-color-secondary-shade: #3ca790;
+	--ion-color-secondary-tint: #57c5ad;
+
+	--ion-color-tertiary: #D6B2FF;
+	--ion-color-tertiary-rgb: 214, 178, 255;
+	--ion-color-tertiary-contrast: #000000;
+	--ion-color-tertiary-contrast-rgb: 0, 0, 0;
+	--ion-color-tertiary-shade: #bc9de0;
+	--ion-color-tertiary-tint: #dabaff;
+
+	--ion-color-success: #2dd36f;
+	--ion-color-success-rgb: 45, 211, 111;
+	--ion-color-success-contrast: #000000;
+	--ion-color-success-contrast-rgb: 0, 0, 0;
+	--ion-color-success-shade: #28ba62;
+	--ion-color-success-tint: #42d77d;
+
+	--ion-color-warning: #ffc409;
+	--ion-color-warning-rgb: 255, 196, 9;
+	--ion-color-warning-contrast: #000000;
+	--ion-color-warning-contrast-rgb: 0, 0, 0;
+	--ion-color-warning-shade: #e0ac08;
+	--ion-color-warning-tint: #ffca22;
+
+	--ion-color-danger: #eb445a;
+	--ion-color-danger-rgb: 235, 68, 90;
+	--ion-color-danger-contrast: #ffffff;
+	--ion-color-danger-contrast-rgb: 255, 255, 255;
+	--ion-color-danger-shade: #cf3c4f;
+	--ion-color-danger-tint: #ed576b;
+
+	--ion-color-medium: #92949c;
+	--ion-color-medium-rgb: 146, 148, 156;
+	--ion-color-medium-contrast: #000000;
+	--ion-color-medium-contrast-rgb: 0, 0, 0;
+	--ion-color-medium-shade: #808289;
+	--ion-color-medium-tint: #9d9fa6;
+
+	--ion-color-light: #f4f5f8;
+	--ion-color-light-rgb: 244, 245, 248;
+	--ion-color-light-contrast: #000000;
+	--ion-color-light-contrast-rgb: 0, 0, 0;
+	--ion-color-light-shade: #d7d8da;
+	--ion-color-light-tint: #f5f6f9;
+
+	--ion-color-dark: #29223a;
+	--ion-color-dark-rgb: 29, 25, 39;
+	--ion-color-dark-contrast: #ffffff;
+	--ion-color-dark-contrast-rgb: 255, 255, 255;
+	--ion-color-dark-shade: #1a1622;
+	--ion-color-dark-tint: #34303d;
+
+	//FONTS
+	--font-family: font-family: 'Poppins', serif;
+	;
+}
+
+$primary-palette: (
+	50: #e5e6f8,
+	100: #bfc0ed,
+	200: #9496e1,
+	300: #696cd4,
+	400: #494dcb,
+	500: #292dc2,
+	600: #2428bc,
+	700: #1f22b4,
+	800: #191cac,
+	900: #0f119f,
+	contrast: (50: rgba(black, 0.87),
+		100: rgba(black, 0.87),
+		200: rgba(black, 0.87),
+		300: rgba(black, 0.87),
+		400: red,
+		500: red,
+		600: red,
+		700: red,
+		800: red,
+		900: red,
+	)
+);
+$secondary-palette:(
+	50 : #e9f7f4,
+    100 : #c7ece4,
+    200 : #a2dfd2,
+    300 : #7cd2bf,
+    400 : #60c8b2,
+    500 : #26b9b4,
+    600 : #3eb89c,
+    700 : #35af92,
+    800 : #2da789,
+    900 : #1f9978,
+    A100 : #d4fff2,
+    A200 : #ffffff,
+    A400 : #6effd4,
+    A700 : #54ffcd,
+    contrast: (
+        50 : #ffffff,
+        100 : #ffffff,
+        200 : #ffffff,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #ffffff,
+        A200 : #ffffff,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+)
