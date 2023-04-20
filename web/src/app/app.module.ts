@@ -16,6 +16,8 @@ import { HeaderComponent } from './components/public/home/header/header.componen
 import { MaterialModule } from './modules/material/material.module';
 import { FeaturesComponent } from './components/public/home/features/features.component';
 import { HomeTitlesComponent } from './components/public/home/home-titles/home-titles.component';
+import { ExperienceComponent } from './components/public/home/experience/experience.component';
+import { FooterComponent } from './components/generalComponents/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { HomeTitlesComponent } from './components/public/home/home-titles/home-t
     HomeComponent,
     HeaderComponent,
     FeaturesComponent,
-    HomeTitlesComponent
+    HomeTitlesComponent,
+    ExperienceComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
