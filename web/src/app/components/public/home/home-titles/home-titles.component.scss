@@ -1,0 +1,19 @@
+.light {
+    .title {
+        color: var(--ion-color-primary);
+    }
+
+    .description {
+        color: var(--ion-color-dark);
+    }
+}
+
+.blue {
+    .title {
+        color: var(--ion-color-secondary);
+    }
+
+    .description {
+        color: var(--ion-color-light);
+    }
+}

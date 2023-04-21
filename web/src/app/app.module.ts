@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +18,7 @@ import { FeaturesComponent } from './components/public/home/features/features.co
 import { HomeTitlesComponent } from './components/public/home/home-titles/home-titles.component';
 import { ExperienceComponent } from './components/public/home/experience/experience.component';
 import { FooterComponent } from './components/generalComponents/footer/footer.component';
+import { PortfolioComponent } from './components/public/home/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { FooterComponent } from './components/generalComponents/footer/footer.co
     FeaturesComponent,
     HomeTitlesComponent,
     ExperienceComponent,
-    FooterComponent
+    FooterComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -44,6 +46,8 @@ import { FooterComponent } from './components/generalComponents/footer/footer.co
   providers: [
     ScreenTrackingService, UserTrackingService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+
 })
 export class AppModule { }

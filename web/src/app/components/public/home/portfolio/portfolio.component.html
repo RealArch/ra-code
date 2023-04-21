@@ -1,0 +1,33 @@
+<section class="section py-3 py-lg-5">
+    <div class="container py-3 py-lg-5">
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-lg-6 mb-4">
+                <app-home-titles theme="blue" class="text-center header" title="Portafolio"
+                    description="Trabajos asombrosos que hemos realizado"></app-home-titles>
+            </div>
+        </div>
+
+        <div class="w-100">
+            <swiper-container class="portfolioSwiper" #portfolioSwiper>
+                <swiper-slide *ngFor="let client of clients">
+                    <!--  <div class="box-slide d-flex alig-items-center justify-content-center"
+                        [ngStyle]="{'background-image': 'linear-gradient(to left,
+                        rgba(31, 31, 31, .8),
+                        rgba(31, 31, 31, .8)),
+                    url(' +client.webCapture+')'}">
+                        <img class="img-fluid" [src]="client.logo" alt="logo">
+
+                    </div> -->
+                    <div (click)="goTo(client.link)" [ngStyle]="{'background-color':client.color}"
+                        class="box-slide d-flex alig-items-center justify-content-center">
+                        <img class="img-fluid" [src]="client.logo" alt="logo">
+
+                    </div>
+                </swiper-slide>
+
+
+            </swiper-container>
+        </div>
+    </div>
+</section>

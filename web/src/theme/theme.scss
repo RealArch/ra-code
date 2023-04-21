@@ -67,6 +67,12 @@
 	//FONTS
 	--font-family: font-family: 'Poppins', serif;
 	;
+	//SHADOWS
+	--shadow:rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	--shadow-dark:rgba(22, 22, 22, 0.2) 0px 8px 24px;
+	--shadow-blue:rgba(12, 22, 208, 0.448) 0px 8px 24px;
+
+
 }
 
 $primary-palette: (
@@ -92,35 +98,33 @@ $primary-palette: (
 		900: red,
 	)
 );
-$secondary-palette:(
+$secondary-palette: (
 	50 : #e9f7f4,
-    100 : #c7ece4,
-    200 : #a2dfd2,
-    300 : #7cd2bf,
-    400 : #60c8b2,
-    500 : #26b9b4,
-    600 : #3eb89c,
-    700 : #35af92,
-    800 : #2da789,
-    900 : #1f9978,
-    A100 : #d4fff2,
-    A200 : #ffffff,
-    A400 : #6effd4,
-    A700 : #54ffcd,
-    contrast: (
-        50 : #ffffff,
-        100 : #ffffff,
-        200 : #ffffff,
-        300 : #ffffff,
-        400 : #ffffff,
-        500 : #ffffff,
-        600 : #ffffff,
-        700 : #ffffff,
-        800 : #ffffff,
-        900 : #ffffff,
-        A100 : #ffffff,
-        A200 : #ffffff,
-        A400 : #ffffff,
-        A700 : #ffffff,
-    )
-)
+	100 : #c7ece4,
+	200 : #a2dfd2,
+	300 : #7cd2bf,
+	400 : #60c8b2,
+	500 : #26b9b4,
+	600 : #3eb89c,
+	700 : #35af92,
+	800 : #2da789,
+	900 : #1f9978,
+	A100 : #d4fff2,
+	A200 : #ffffff,
+	A400 : #6effd4,
+	A700 : #54ffcd,
+	contrast: (50 : #ffffff,
+		100 : #ffffff,
+		200 : #ffffff,
+		300 : #ffffff,
+		400 : #ffffff,
+		500 : #ffffff,
+		600 : #ffffff,
+		700 : #ffffff,
+		800 : #ffffff,
+		900 : #ffffff,
+		A100 : #ffffff,
+		A200 : #ffffff,
+		A400 : #ffffff,
+		A700 : #ffffff,
+	))

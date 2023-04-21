@@ -8,4 +8,11 @@ import { Component, Input } from '@angular/core';
 export class HomeTitlesComponent {
   @Input() title: string | undefined;
   @Input() description: string | undefined;
+  @Input() theme: string | undefined;
+
+  ngOnInit() {
+    if (this.theme == undefined) {
+      this.theme = 'light'
+    }
+  }
 }
