@@ -1,7 +1,9 @@
 .publicMenu {
     width: 300px;
     background-color: var(--ion-color-primary);
-
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
     button {
         color: var(--ion-color-light);
         height: 50px;
