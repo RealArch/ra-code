@@ -1,4 +1,6 @@
 export const environment = {
+  mailer: 'info@ra-code.com',
+
   firebase: {
     projectId: 'ra-code',
     appId: '1:450798442317:web:c76f79623aab6f1a25c904',

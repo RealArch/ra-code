@@ -21,8 +21,9 @@
                     </div> -->
                     <div (click)="goTo(client.link)" [ngStyle]="{'background-color':client.color}"
                         class="box-slide d-flex alig-items-center justify-content-center">
-                        <img class="img-fluid" [src]="client.logo" alt="logo">
-
+                        <div class="box-img">
+                            <img class="img-fluid" [src]="client.logo" alt="logo">
+                        </div>
                     </div>
                 </swiper-slide>
 

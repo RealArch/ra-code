@@ -19,6 +19,11 @@ import { HomeTitlesComponent } from './components/public/home/home-titles/home-t
 import { ExperienceComponent } from './components/public/home/experience/experience.component';
 import { FooterComponent } from './components/generalComponents/footer/footer.component';
 import { PortfolioComponent } from './components/public/home/portfolio/portfolio.component';
+import { ContactComponent } from './components/public/contact/contact.component';
+import { HeaderSectionComponent } from './components/generalComponents/header-section/header-section.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { GeneralSnackbarComponent } from './components/generalComponents/general-snackbar/general-snackbar.component';
+import { OkDialogComponent } from './components/generalComponents/ok-dialog/ok-dialog.component';
 
 @NgModule({
   declarations: [
@@ -31,11 +36,17 @@ import { PortfolioComponent } from './components/public/home/portfolio/portfolio
     HomeTitlesComponent,
     ExperienceComponent,
     FooterComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ContactComponent,
+    HeaderSectionComponent,
+    GeneralSnackbarComponent,
+    OkDialogComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAnalytics(() => getAnalytics()),
     provideAuth(() => getAuth()),

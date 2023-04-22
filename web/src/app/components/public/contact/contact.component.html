@@ -1,0 +1,87 @@
+<app-header-section title="Contacto" [breadcrumb]="breadcrumb" [background]="background"></app-header-section>
+<section #contact class="py-5">
+    <div class="my-5">
+
+        <form [formGroup]="contactForm">
+            <div class="container">
+                <ion-row class="d-flex justify-content-center mb-3">
+                    <div class="col-12 col-lg-7 text-center mb-5">
+                        <div class="title-2 mb-3">
+                            Contacta con nosotros
+                        </div>
+                        <p>
+                            Estamos disponibles las 24 horas del día, los 7 días de la semana por correo electrónico
+                            y teléfono. También puedes hacer una pregunta sobre nuestros servicios a través de
+                            nuestro formulario de contacto.
+                        </p>
+                    </div>
+                </ion-row>
+                <div class="row">
+                    <div class="col-12 col-lg-5 d-flex alig-items-center">
+                        <img class="img-fluid" src="/assets/images/contact_image.svg" alt="Contact image">
+                    </div>
+                    <div class="col-12 col-lg-7">
+                        <div class="row">
+
+                            <div class="col-12 col-lg-6">
+                                <mat-form-field class="w-100" appearance="outline" floatLabel="always">
+                                    <mat-label>Nombre</mat-label>
+                                    <input type="text" maxLength="25" matInput #name formControlName="name"
+                                        placeholder="Ex. Jhon">
+                                    <mat-hint align="end">{{name.value.length}}/25</mat-hint>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <mat-form-field class="w-100" appearance="outline" floatLabel="always">
+                                    <mat-label>Apellido</mat-label>
+                                    <input type="text" maxLength="25" matInput #lastname formControlName="lastname"
+                                        placeholder="Ex. Smith">
+                                    <mat-hint align="end">{{lastname.value.length}}/25</mat-hint>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <mat-form-field class="w-100" appearance="outline" floatLabel="always">
+                                    <mat-label>Email</mat-label>
+                                    <input type="email" maxLength="100" matInput #email formControlName="email"
+                                        placeholder="example@gmail.com">
+                                    <mat-hint align="end">{{email.value.length}}/100</mat-hint>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <mat-form-field class="w-100" appearance="outline" floatLabel="always">
+                                    <mat-label>Teléfono</mat-label>
+                                    <input maxLength="20" matInput #phone formControlName="phone"
+                                        placeholder="+1 407 702 3859">
+                                    <mat-hint align="end">{{phone.value.length}}/20</mat-hint>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-12">
+                                <mat-form-field class="w-100" appearance="outline" floatLabel="always">
+                                    <mat-label>Descripción</mat-label>
+                                    <textarea rows="9" matInput maxLength="1000" #description
+                                        formControlName="description"
+                                        placeholder="Cuentanos... ¿cómo te podemos ayudar?"></textarea>
+                                    <mat-hint align="end">{{description.value.length}}/1000</mat-hint>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-12 text-end pt-2" *ngIf="!contactForm.valid">
+                                <span style="color: var(--ion-color-danger);">Completa todos los campos correctamente para desbloquear
+                                    el botón de enviar.
+                                </span>
+                            </div>
+                            <div class="col-12 d-flex justify-content-end mt-3">
+                                <button mat-raised-button style="width: 100px;" color="primary"
+                                    [disabled]="!contactForm.valid || sending" (click)="sendMail(contactForm.value)">
+                                    <span *ngIf="!sending">Enviar</span>
+                                    <div *ngIf="sending" class="spinner"></div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+</section>

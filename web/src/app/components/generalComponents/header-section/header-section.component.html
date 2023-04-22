@@ -1,0 +1,23 @@
+<header id="header" [ngStyle]="{'background-image': 'linear-gradient(to left,
+                        rgba(31, 31, 31, 0),
+                        rgba(31, 31, 31, .8)),
+                    url(' +background+')'}">
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="h-100 col d-flex align-items-center">
+                <div class="title pt-5">
+                    <h1>{{title}}</h1>
+                    <div class="bc">
+                        <ol class="breadcrumb">
+                            <li *ngFor="let item of breadcrumb;  index as i" class="breadcrumb-item">
+                                <a [routerLink]="item.link"
+                                    [ngClass]="{'active' : i==breadcrumb.length-1}">{{item.name}}</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>

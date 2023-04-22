@@ -55,7 +55,22 @@ p {
   font-size: 1.1em;
 }
 
+//snackbars
+.mat-mdc-snack-bar-container {
+  &.snackSuccess {
+    --mdc-snackbar-container-color: var(--ion-color-success);
+    --mat-mdc-snack-bar-button-color: var(--ion-color-dark);
+    --mdc-snackbar-supporting-text-color: var(--ion-color-dark);
+  }
+  &.snackDanger {
+    --mdc-snackbar-container-color: var(--ion-color-danger);
+    --mat-mdc-snack-bar-button-color: var(--ion-color-light);
+    --mdc-snackbar-supporting-text-color: var(--ion-color-light);
+  }
+}
+
 //typography
+
 .font-dark {
   color: var(--ion-color-dark);
 }
@@ -70,9 +85,9 @@ p {
 
 
 h1 {
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 1.1;
+  font-size: 3.2em !important;
+  font-weight: 600 !important;
+  line-height: 1.1 !important;
 }
 
 .title-1 {
@@ -130,4 +145,27 @@ h3 {
   .card-content {
     margin: 20px;
   }
+}
+
+//spinner button
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  border-top-color: #000000;
+  animation: spinner .8s linear infinite;
 }
