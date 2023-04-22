@@ -11,6 +11,11 @@ const routes: Routes = [
     children: [
       {
         path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
+      },
+      {
+        path: 'home',
         component: HomeComponent
       },
       {
@@ -26,6 +31,7 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes, {
     initialNavigation: 'enabledBlocking',
     scrollPositionRestoration: "enabled",
+    anchorScrolling: 'enabled',
 
   })],
   exports: [RouterModule]

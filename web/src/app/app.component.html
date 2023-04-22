@@ -1,2 +1,18 @@
+<mat-drawer-container class="example-container">
+    <mat-drawer class="publicMenu p-3" #publicSideNav mode="over" [autoFocus]="false">
+        <button (click)="publicSideNav.close()" mat-button class="menu-button" routerLink="/home" routerLinkActive="selected">
+            <mat-icon size="medium">home</mat-icon>
+            <span>Inicio</span>
+        </button>
+        <button (click)="publicSideNav.close()" mat-button class="menu-button" routerLink="/contact" routerLinkActive="selected">
+            <mat-icon>home</mat-icon>
+            <span>Contacto</span>
+        </button>
+    </mat-drawer>
 
-<router-outlet></router-outlet>
+    <div>
+        <router-outlet></router-outlet>
+
+    </div>
+
+</mat-drawer-container>
